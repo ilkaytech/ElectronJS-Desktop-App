@@ -15,7 +15,7 @@ const Header = () => {
       <header className="py-4 px-6 flex justify-between items-center ">
         <div className="logo">
           <a href="/">
-            <h2 className="text-4xl font-bold mr-3">LOGO</h2>
+            <h2 className="text-4xl font-bold mr-3 text-[#8B67F3] ">LOGO</h2>
           </a>
         </div>
         <div className="header-search flex-1 flex justify-center">
@@ -23,36 +23,51 @@ const Header = () => {
             size="large"
             placeholder="Search..."
             prefix={<SearchOutlined />}
-            className="rounded-full "
+            className="rounded-full text-gray-600 hover:border-[#8B67F3]"
           />
         </div>
         <div className="menu-links flex justify-between items-center gap-4">
           <a
             href={'/'}
-            className="menu-link flex flex-col px-3 hover:text-[#48adff] transition-all "
+            className="menu-link flex flex-col px-3 text-gray-600 hover:text-[#8B67F3] transition-all "
           >
-            <HomeOutlined className="text-lg " />
-            <span className="text-sm">Home</span>
+            <HomeOutlined className="text-lg" />
+            <span className="text-sm ">Home</span>
           </a>
           <Badge count={5} offset={[-4]} className="mr-3">
-            <a href={'/'} className="menu-link flex flex-col hover:text-[#48adff] transition-all">
+            <a
+              href={'/'}
+              className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
+            >
               <ShoppingCartOutlined className="text-lg  " />
               <span className="text-sm">Cart</span>
             </a>
           </Badge>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#48adff] transition-all">
+          <a
+            href={'/'}
+            className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
+          >
             <CopyOutlined className="text-lg  " />
             <span className="text-sm">Invoices</span>
           </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#48adff] transition-all">
+          <a
+            href={'/'}
+            className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
+          >
             <UserOutlined className="text-lg  " />
             <span className="text-sm">Customer</span>
           </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#48adff] transition-all">
+          <a
+            href={'/'}
+            className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
+          >
             <BarChartOutlined className="text-lg  " />
             <span className="text-sm">Statistics</span>
           </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#48adff] transition-all">
+          <a
+            href={'/'}
+            className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
+          >
             <LogoutOutlined className="text-lg  " />
             <span className="text-sm">Close</span>
           </a>
