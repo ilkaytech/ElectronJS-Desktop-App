@@ -12,10 +12,10 @@ import {
 const Header = () => {
   return (
     <div className="border-b shadow-lg mb-6">
-      <header className="py-4 px-6 flex justify-between items-center bg-gray-100">
+      <header className="py-4 px-6 flex justify-between items-center ">
         <div className="logo">
           <a href="/">
-            <h2 className="text-4xl font-bold mx-3">LOGO</h2>
+            <h2 className="text-4xl font-bold mr-3">LOGO</h2>
           </a>
         </div>
         <div className="header-search flex-1 flex justify-center">
