@@ -1,5 +1,3 @@
-# ElectronJS-Desktop-App
-
 # poss-app
 
 An Electron application with React and TypeScript
