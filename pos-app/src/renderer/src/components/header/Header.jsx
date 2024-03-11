@@ -11,7 +11,7 @@ import {
 
 const Header = () => {
   return (
-    <div className="border-b shadow-lg mb-6">
+    <div className="border-b shadow-lg mb-4">
       <header className="py-4 px-6 flex justify-between items-center ">
         <div className="logo">
           <a href="/">
@@ -40,7 +40,7 @@ const Header = () => {
               className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
             >
               <ShoppingCartOutlined className="text-lg  " />
-              <span className="text-sm">Cart</span>
+              <span className="text-sm">Sales</span>
             </a>
           </Badge>
           <a
@@ -48,14 +48,14 @@ const Header = () => {
             className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
           >
             <CopyOutlined className="text-lg  " />
-            <span className="text-sm">Invoices</span>
+            <span className="text-sm">Biils</span>
           </a>
           <a
             href={'/'}
             className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
           >
             <UserOutlined className="text-lg  " />
-            <span className="text-sm">Customer</span>
+            <span className="text-sm">Customers</span>
           </a>
           <a
             href={'/'}
@@ -69,7 +69,7 @@ const Header = () => {
             className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
           >
             <LogoutOutlined className="text-lg  " />
-            <span className="text-sm">Close</span>
+            <span className="text-sm">Logout</span>
           </a>
         </div>
       </header>
