@@ -1,5 +1,5 @@
 import { Button } from 'antd'
-import { ClearOutlined } from '@ant-design/icons'
+import { ClearOutlined, PlusCircleOutlined, MinusCircleOutlined } from '@ant-design/icons'
 
 const CartTotals = () => {
   return (
@@ -7,9 +7,36 @@ const CartTotals = () => {
       <h2 className="bg-[#8B67F3] text-center py-2 text-white tracking-wide rounded-s-lg  shadow select-none cursor-pointer ">
         Sepetteki Ürünler
       </h2>
-      <div className="cart-items">
-        <div className="cart-item">cart item</div>
-      </div>
+      <ul className="cart-items px-2 flex flex-col gap-y-2 overflow-y-auto py-2">
+        <li className="cart-item flex justify-between">
+          <div className="flex items-center">
+            <img
+              src="https://www.doktorsaliheken.com/2021/03/elma.jpg"
+              alt=""
+              className="w-16 h-16 object-cover"
+            />
+            <div className="flex flex-col ml-1">
+              <b>Elma</b>
+              <span>12€ x 2</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-x-1 mr-2">
+            <Button
+              type=""
+              size="small"
+              className="w-full flex items-center justify-center border-none"
+              icon={<PlusCircleOutlined />}
+            />
+            <span className="text-md">1</span>
+            <Button
+              type=""
+              size="small"
+              className="w-full flex items-center justify-center border-none"
+              icon={<MinusCircleOutlined />}
+            />
+          </div>
+        </li>
+      </ul>
       <div className="cart-totals mt-auto">
         <div className="border-t border-b">
           <div className="flex justify-between p-2">
