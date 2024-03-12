@@ -13,13 +13,16 @@ function createWindow() {
     ...(process.platform === 'linux' ? { icon } : {}),
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
-      sandbox: false
+      sandbox: false,
+      contentSecurityPolicy: "default-src 'self' https:; img-src * data:;"
     },
     resizable: false,
     fullscreenable: false,
     alwaysOnTop: true
     // frame: false
   })
+
+  mainWindow.loadURL('http://localhost:5173')
 
   mainWindow.on('ready-to-show', () => {
     mainWindow.show()

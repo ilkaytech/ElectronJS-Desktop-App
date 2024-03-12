@@ -36,10 +36,10 @@ const Header = () => {
           </a>
           <Badge count={5} offset={[-4]} className="mr-3">
             <a
-              href={'/'}
+              href={'/cart'}
               className="menu-link flex flex-col text-gray-600 hover:text-[#8B67F3] transition-all"
             >
-              <ShoppingCartOutlined className="text-lg  " />
+              <ShoppingCartOutlined className="text-lg" />
               <span className="text-sm">Sales</span>
             </a>
           </Badge>
