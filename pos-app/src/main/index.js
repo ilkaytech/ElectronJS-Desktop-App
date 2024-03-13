@@ -14,7 +14,8 @@ function createWindow() {
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: false,
-      contentSecurityPolicy: "default-src 'self' https:; img-src * data:;"
+      contentSecurityPolicy:
+        "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; script-src 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; font-src 'self' https: data:; img-src 'self' https: data: https://example.com;"
     },
     resizable: false,
     fullscreenable: false,

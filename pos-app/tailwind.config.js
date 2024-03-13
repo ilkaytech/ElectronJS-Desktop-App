@@ -1,8 +1,10 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/renderer/index.html', './src/renderer/src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif']
+      },
       backgroundColor: {
         primary: '#02A676',
         secondary: '#008C72',
