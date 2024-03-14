@@ -8,7 +8,7 @@ import {
   BarChartOutlined,
   LogoutOutlined
 } from '@ant-design/icons'
-
+import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div className="border-b  mb-4 bg-[#F8F8F8]  ">
@@ -27,38 +27,41 @@ const Header = () => {
           />
         </div>
         <div className=" menu-links flex justify-between items-center gap-4 text-gray-800 font-light    ">
-          <a
-            href={'/'}
+          <Link
+            to={'/'}
             className=" menu-link flex flex-col px-3  hover:text-[#3AA384] transition-all "
           >
             <HomeOutlined className="text-lg" />
             <span className="text-sm ">Home</span>
-          </a>
+          </Link>
           <Badge count={5} offset={[-4]} className="mr-3" style={{ backgroundColor: '#ed6840' }}>
-            <a
-              href={'/cart'}
+            <Link
+              to={'/cart'}
               className="menu-link flex flex-col text-gray-800 hover:text-[#3AA384] transition-all"
             >
               <ShoppingCartOutlined className="text-lg " />
               <span className="text-sm">Sales</span>
-            </a>
+            </Link>
           </Badge>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#3AA384] transition-all">
+          <Link
+            to={'/bills'}
+            className="menu-link flex flex-col hover:text-[#3AA384] transition-all"
+          >
             <CopyOutlined className="text-lg  " />
             <span className="text-sm">Biils</span>
-          </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#3AA384] transition-all">
+          </Link>
+          <Link to={'/'} className="menu-link flex flex-col hover:text-[#3AA384] transition-all">
             <UserOutlined className="text-lg  " />
             <span className="text-sm">Customers</span>
-          </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#3AA384]  transition-all">
+          </Link>
+          <Link to={'/'} className="menu-link flex flex-col hover:text-[#3AA384]  transition-all">
             <BarChartOutlined className="text-lg  " />
             <span className="text-sm">Statistics</span>
-          </a>
-          <a href={'/'} className="menu-link flex flex-col hover:text-[#3AA384] transition-all">
+          </Link>
+          <Link to={'/'} className="menu-link flex flex-col hover:text-[#3AA384] transition-all">
             <LogoutOutlined className="text-lg  " />
             <span className="text-sm">Logout</span>
-          </a>
+          </Link>
         </div>
       </header>
     </div>
