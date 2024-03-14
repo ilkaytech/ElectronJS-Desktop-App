@@ -1,7 +1,11 @@
 import { Table, Card } from 'antd'
 import Header from '../components/header/Header'
+import { FaPlus } from 'react-icons/fa'
+import { useState } from 'react'
+import CreateBill from '../components/cart/CreateBill'
 
 const CartPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   const dataSource = [
     {
       key: '1',
@@ -38,27 +42,32 @@ const CartPage = () => {
     <>
       <Header />
       <div className="px-4">
-        <Table dataSource={dataSource} columns={columns} bordered />
+        <Table dataSource={dataSource} columns={columns} bordered pagination={false} />
         <div className="cart-total flex justify-end">
-          <Card className="w-72">
+          <Card className="w-72 mt-4">
             <div className="flex justify-between">
-              <span>Ara Toplam</span>
+              <span>Sub total</span>
               <span>549.00€</span>
             </div>
             <div className="flex justify-between my-2 ">
-              <span>KDV Toplam %8</span>
-              <span className="text-red-600  ">42.92€</span>
+              <span>Tax</span>
+              <span className="text-[#ed6840]">42.92€</span>
             </div>
             <div className="flex justify-between">
-              <b>Toplam</b>
+              <b>Total</b>
               <b>589.00€</b>
             </div>
-            <button className="mt-4 ml-2 bg-[#8B67F3] text-white px-16 py-2 cursor-pointer rounded-lg shadow hover:bg-gray-300 hover:shadow-inner hover:text-gray-800 transition-all ">
-              Sipariş Oluştur
+            <button
+              className="ml-1 mt-4 bg-[#3AA384] text-white text-sm font-light px-16 py-2 cursor-pointer rounded-sm hover:bg-[#30886e] hover:shadow-inner transition-all flex items-center"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <FaPlus className="mr-2" />
+              Create order
             </button>
           </Card>
         </div>
       </div>
+      <CreateBill isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
     </>
   )
 }

@@ -1,6 +1,6 @@
 const Products = () => {
   return (
-    <div className="products-wrapper grid grid-cols-5 gap-4">
+    <div className="products-wrapper grid grid-cols-3 gap-4">
       <div className="product-item border hover:shadow cursor-pointer transition-all select-none ">
         <div className="product-img">
           <img
