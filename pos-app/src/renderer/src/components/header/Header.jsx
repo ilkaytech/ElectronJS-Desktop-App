@@ -14,7 +14,7 @@ const Header = () => {
     <div className="border-b  mb-4 bg-[#F8F8F8]  ">
       <header className="py-4 px-6 flex justify-between items-center ">
         <div className="logo">
-          <a href="/">
+          <a href="/register">
             <h2 className="text-4xl mr-3 font-light text-[#3AA384] ">Logo</h2>
           </a>
         </div>

@@ -16,7 +16,7 @@ const BillPage = () => {
     {
       key: '2',
       name: 'John',
-      age: '42',
+      age: '43',
       address: '10 Downing Street'
     }
   ]
@@ -45,12 +45,12 @@ const BillPage = () => {
         <h1 className="text-3xl  font-bold text-center text-[#3AA384] mb-4 ">Bills</h1>
         <Table dataSource={dataSource} columns={columns} bordered pagination={false} />
         <div className="cart-total flex justify-end">
-          <Card className="w-72 mt-4">
+          <Card className="w-62 mt-4">
             <button
-              className="ml-1 mt-4 bg-[#3AA384] text-white text-sm font-light px-16 py-2 cursor-pointer rounded-sm hover:bg-[#30886e] hover:shadow-inner transition-all flex items-center"
+              className=" mt-1 bg-[#3AA384] text-white text-sm font-light px-14 py-2 cursor-pointer rounded-sm hover:bg-[#30886e] hover:shadow-inner transition-all flex items-end"
               onClick={() => setIsModalOpen(true)}
             >
-              <PiPrinterThin className="mr-1 text-lg" />
+              <PiPrinterThin className="mr-2 text-lg " />
               Print
             </button>
           </Card>
