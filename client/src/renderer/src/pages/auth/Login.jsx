@@ -7,7 +7,9 @@ const Login = () => {
     <div className="h-screen ">
       <div className="flex justify-between h-full ">
         <div className=" px-14 w-full flex flex-col h-full justify-center relative">
-          <h1 className="text-center text-4xl font-bold mb-24 text-[#3AA384]">LOGO</h1>
+          <Link to={'/'} className="text-center text-4xl font-bold mb-24 text-[#3AA384]">
+            LOGO
+          </Link>
           <Form layout="vertical ">
             <Form.Item
               label="E-mail"
