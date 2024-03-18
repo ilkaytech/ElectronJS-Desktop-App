@@ -44,10 +44,4 @@ const BillSchema = new mongoose.Schema(
 );
 
 /* ------------------------------------------------------- */
-// FOR REACT PROJECT:
-BillSchema.pre("init", function (data) {
-  data.id = data._id;
-  data.createds = data.createdAt.toLocaleDateString("tr-tr");
-});
-/* ------------------------------------------------------- */
 module.exports = mongoose.model("Bills", BillSchema);
